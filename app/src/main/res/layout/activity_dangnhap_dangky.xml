@@ -1,0 +1,139 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    //Thanh title
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+        <ImageView
+            android:id="@+id/DangnhapDangky_imgBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_goback"
+            android:background="#FFFFFF"
+            android:paddingLeft="10dp"></ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Quay về trang chủ"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"></TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"></TextView>
+
+    //Vung dang nhap va dang ky
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <!--<TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HOSPITAL H"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:textAlignment="center"></TextView>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nhập mã bảo hiểm y tế"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:background="#949494"></TextView>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="vertical"
+                    android:background="#949494">
+                    <TextView
+                        android:paddingTop="125dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ĐĂNG NHẬP"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="#FFFFFF"></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="40dp">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_person"></ImageView>
+                    <EditText
+                        android:id="@+id/DangnhapDangky_edtMaBHYT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textSize="30dp"
+                        android:background="@drawable/black_border"
+                        android:hint="Nhập mã BHYT"></EditText>
+                </LinearLayout>
+            <!--<TextView
+                android:background="#949494"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nhập mật khẩu"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textAlignment="center"></TextView>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="10dp">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_lock"></ImageView>
+                    <EditText
+                        android:id="@+id/DangnhapDangky_MatKhau"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textSize="30dp"
+                        android:inputType="textPassword"
+                        android:background="@drawable/black_border"
+                        android:hint="Nhập mật khẩu"></EditText>
+                </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/DangnhapDangky_btnDangNhap"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG NHẬP"
+        android:textSize="25dp"></Button>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"></TextView>
+
+
+
+</LinearLayout>

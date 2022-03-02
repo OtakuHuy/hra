@@ -1,0 +1,135 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    //THanh img back
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+        <ImageView
+            android:id="@+id/ChiTietLienHe_imgBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_goback"
+            android:background="#FFFFFF"
+            android:paddingLeft="10dp"></ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Quay về trang chủ"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"></TextView>
+    </LinearLayout>
+    //Thanh den
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"></TextView>
+    //Gọi nguy cấp
+    <LinearLayout
+        android:background="@drawable/black_border"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRƯỜNG HỢP KHẨN CẤP NGUY HIỂM TÍNH MẠNG"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#E74C3C"></TextView>
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/ChiTietLienHe_btnGoiKhanCap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="GỌI CẤP CỨU NHANH"></Button>
+    </LinearLayout>
+    //Đường dây nóng
+    <LinearLayout
+        android:background="@drawable/black_border"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ĐƯỜNG DÂY NÓNG COVID-19"
+            android:textStyle="bold"></TextView>
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/ChiTietLienHe_btnGoiDuongDayNong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GỌI VÀO ĐƯỜNG DÂY NÓNG"></Button>
+    </LinearLayout>
+    //Tổng đài giải đáp thắc mắc
+    <LinearLayout
+        android:background="@drawable/black_border"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TỔNG ĐÀI CỦA BỆNH VIỆN"
+            android:textStyle="bold"></TextView>
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/ChiTietLienHe_btnGoiTongDai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GỌI TỔNG ĐÀI"></Button>
+    </LinearLayout>
+    //Tổng đài bộ y tế
+    <LinearLayout
+        android:background="@drawable/black_border"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TỔNG ĐÀI BỘ Y TẾ"
+            android:textStyle="bold"></TextView>
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/ChiTietLienHe_btnGoiTongDaiBYT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GỌI TỔNG ĐÀI"></Button>
+    </LinearLayout>
+
+</LinearLayout>

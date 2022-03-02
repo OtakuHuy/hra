@@ -1,0 +1,197 @@
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+        <ImageView
+            android:id="@+id/Dangkykham_imgBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_goback"
+            android:background="#FFFFFF"
+            android:paddingLeft="10dp"></ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Về giao diện chính"
+            android:textSize="20dp"
+            android:paddingTop="5dp"></TextView>
+    </LinearLayout>
+    //Line den ngan cach
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"></TextView>
+
+    //Title
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:background="#949494">
+            <TextView
+                android:paddingTop="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ĐĂNG KÝ KHÁM"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+                    <TextView
+                        android:paddingTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:text="Mã bảo hiểm y tế"></TextView>
+                    <TextView
+                        android:id="@+id/Dangkykham_tvMaBHYT"
+                        android:paddingTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="XIN VUI LÒNG ĐĂNG NHẬP"
+                        android:textAlignment="center"></TextView>
+                    //
+                    <TextView
+                        android:paddingTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:text="Họ và tên"></TextView>
+                    <TextView
+                        android:id="@+id/Dangkykham_tvHoTen"
+                        android:paddingTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="XIN VUI LÒNG ĐĂNG NHẬP"
+                        android:textAlignment="center"></TextView>
+                    //
+                    <TextView
+                        android:paddingTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:text="Bệnh viện đăng ký"></TextView>
+                    <TextView
+                        android:paddingTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="BỆNH VIỆN H"
+                        android:textAlignment="center"></TextView>
+                    //
+                    <TextView
+                        android:paddingTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:text="Đăng ký tùy chọn:"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nhằm tiết kiệm thời gian, chỉ dành cho bệnh nhân nào biết hoặc nghi ngờ đang bị bệnh gì, nếu không xin vui lòng để tự động, khi đến bệnh viện sẽ có người ở quầy hỏi rõ các triệu chứng và sắp xếp phù hợp. Chúng tôi sẽ không chịu trách nhiệm nếu bạn đăng ký sai."
+                        android:textColor="#B22222"></TextView>
+                    <Spinner
+                        android:id="@+id/Dangkykham_spnKhoa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+
+                    //
+                    <TextView
+                        android:paddingTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:text="Chọn ngày khám"></TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ngày:"></TextView>
+                        <EditText
+                            android:textAlignment="center"
+                            android:id="@+id/Dangkykham_edtNgay"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"></EditText>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tháng:"></TextView>
+                        <EditText
+                            android:textAlignment="center"
+                            android:id="@+id/Dangkykham_edtThang"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"></EditText>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Năm:"></TextView>
+                        <EditText
+                            android:textAlignment="center"
+                            android:id="@+id/Dangkykham_edtNam"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"></EditText>
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:text="Chọn buổi muốn khám"></TextView>
+                    <Spinner
+                        android:id="@+id/Dangkykham_spnBuoi"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"></Spinner>
+
+                    <Button
+                        android:id="@+id/Dangkykham_btnHoanTat"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="HOÀN TẤT"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="30dp"></Button>
+
+
+                </LinearLayout>
+        </ScrollView>
+</LinearLayout>

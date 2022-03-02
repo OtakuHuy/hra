@@ -1,0 +1,54 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:background="@drawable/black_border"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký của bạn:"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/EditDangKyKham_ListView_Item_tvMaDangKy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="DANG KY HERE"></TextView>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày đăng ký:"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/EditDangKyKham_ListView_Item_tvNgayDangKy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="DANG KY HERE"></TextView>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nhấn vào để xem chi tiết"
+                android:textStyle="italic"
+                android:textColor="#CB4335"></TextView>
+        </LinearLayout>
+</LinearLayout>

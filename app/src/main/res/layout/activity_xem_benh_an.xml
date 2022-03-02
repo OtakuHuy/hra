@@ -1,0 +1,300 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#949494"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        //Thanh img back
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF">
+            <ImageView
+                android:id="@+id/XemBenhAn_imgBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_goback"
+                android:background="#FFFFFF"
+                android:paddingLeft="10dp"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Quay về trang chủ"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"></TextView>
+        </LinearLayout>
+
+        //Thanh den
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"></TextView>
+        //Title
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:textSize="35dp"
+            android:text="XEM BỆNH ÁN"
+            android:textStyle="bold"
+            android:background="#949494"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"></TextView>
+        //Thanh den
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:layout_marginBottom="5dp"></TextView>
+
+
+
+
+
+        <ScrollView
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/black_border"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:background="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            //TextView Mã bệnh án
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mã bệnh án:"
+                                android:textStyle="bold"
+                                android:textSize="20dp"></TextView>
+                            <TextView
+                                android:textSize="20dp"
+                                android:id="@+id/XemBenhAn_tvMa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0000"
+                                android:textStyle="italic"></TextView>
+                        </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        //TextView Mã BHYT
+                        <TextView
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mã BHYT của bạn:"
+                            android:textStyle="bold"></TextView>
+                        <TextView
+                            android:textSize="20dp"
+                            android:id="@+id/XemBenhAn_tvMaBHYT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0000"
+                            android:textStyle="italic"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        //TextView Ngay Khám
+                        <TextView
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ngày khám:"
+                            android:textStyle="bold"></TextView>
+                        <TextView
+                            android:textSize="20dp"
+                            android:id="@+id/XemBenhAn_tvNgayKham"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00"
+                            android:textStyle="italic"></TextView>
+                        //Tháng khám
+                        <TextView
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/"
+                            android:textStyle="italic"></TextView>
+                        <TextView
+                            android:textSize="20dp"
+                            android:id="@+id/XemBenhAn_tvThangKham"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00"
+                            android:textStyle="italic"></TextView>
+                        //Nam Khám
+                        <TextView
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/"
+                            android:textStyle="italic"></TextView>
+                        <TextView
+                            android:textSize="20dp"
+                            android:id="@+id/XemBenhAn_tvNamKham"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0000"
+                            android:textStyle="italic"></TextView>
+                    </LinearLayout>
+                    //Tên Bác Sĩ
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tên bác sĩ khám:"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:textSize="20dp"
+                        android:id="@+id/XemBenhAn_tvBacSi"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bác sĩ A"></TextView>
+                    //Tên Khoa
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tên khoa đã khám:"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:textSize="20dp"
+                        android:id="@+id/XemBenhAn_tvTenKhoa"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="KHOA A"></TextView>
+                    //Tên bệnh
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bệnh được chuẩn đoán:"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:textSize="20dp"
+                        android:id="@+id/XemBenhAn_tvTenBenh"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bệnh Z"></TextView>
+                    //Tên XN
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Xét nghiệm 1:"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:textSize="20dp"
+                        android:id="@+id/XemBenhAn_tvXN"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="XN-A"></TextView>
+                    //Tên XN1
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Xét nghiệm 2:"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:textSize="20dp"
+                        android:id="@+id/XemBenhAn_tvXN1"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="XN-B"></TextView>
+                    //Tên XN2
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Xét nghiệm 3:"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:textSize="20dp"
+                        android:id="@+id/XemBenhAn_tvXN2"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="XN-C"></TextView>
+                    //Tên thuốc
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thuốc được kê:"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:textSize="20dp"
+                        android:id="@+id/XemBenhAn_tvThuoc"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thuốc"></TextView>
+                    //Tên thuốc 1
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thuốc được kê:"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:textSize="20dp"
+                        android:id="@+id/XemBenhAn_tvThuoc1"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thuốc 1"></TextView>
+                    //Tên thuốc 2
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thuốc được kê:"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20dp"
+                        android:id="@+id/XemBenhAn_tvThuoc2"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thuốc 2"></TextView>
+                </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>
